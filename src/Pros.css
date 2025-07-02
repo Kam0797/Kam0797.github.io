@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&display=swap');
+
+
+
+/*container1 clone */
+.pros-wrapper { 
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height:100vh;
+  width:100vw;
+  max-height: 100vh;
+  max-width: 100vw;
+  scroll-snap-align: start;
+  background: linear-gradient(45deg,rgba(0,0,0,0.5),rgba(255,255,255,0.5));
+  overflow: auto;
+}
+
+.pro-header {
+  font-family: "Boldonse";
+  font-size: 6vw;
+  font-weight: 700;
+  padding: 3vh 3vw 3vh 3vw;
+  text-align: center;
+}
+.prev {
+  overflow: hidden;
+  border-radius: 30%;
+  height: 40vh;
+}
+.prev-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.pro-description {
+  text-align: center;
+  font-family: "Boldonse";
+  font-size: 4.5vw;
+  font-weight: 100;
+}
+
+.overlay-wrapper {
+  /* border: 1px solid #0f0; */
+  display: none;
+  position: fixed;
+  backdrop-filter:blur(4px);
+  top:0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0,0,0,0.8);
+  z-index: 9999;
+  height: 100vh;
+  width: 100vw;
+}
+
+
+
+.features-label {
+  font-family: "Boldonse";
+  color: #fff;
+  font-size: 6vw
+}
+.features-content {
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: #fff;
+  line-height: 2.5;
+  font-family: "Jetbrains Mono"
+}
+.back-btn {
+  background: rgba(37,37,37,0.5);
+  border: 1px solid #fff;
+  padding: 8px;
+  color: #fff;
+  font-size: 17px;
+  background-color: #252525
+
+}
+.overlay-features {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 90%;
+  width: 100%;
+  padding: 5vh 5vw 15vh 5vw;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  height: 7vh;
+}
+.btn {
+  width: 50vw;
+  /* flex-grow: 1 */
+  background : rgba(0,0,0,0.5);
+  border: none;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  color: #fff;
+  font-size: 2.6vh;
+  font-family: "Jetbrains Mono"
+}
+.overlay-iframe {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 4vh 4vw 4vh 4vw;
+  height: 90%;
+  width: 100%
+
+}

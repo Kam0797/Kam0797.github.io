@@ -1,0 +1,48 @@
+* {
+   scrollbar-width: none;
+   -ms-overflow-style: none;
+   }
+  *::-webkit-scrollbar {
+    display: none;
+  }
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  }
+.bgh {
+  margin: 0;
+  display: flex;
+  place-items: auto; 
+  width: 100vw;
+  height: 80vh;
+  background: url('/assets/bg_flower.jpg')  center center;
+  /* background-image: url('/assets/wallpaperflare.com_wallpaper(1).jpg');*/
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+
+}
+
+.bg {
+  position: fixed;
+  top:0;
+  left:0;
+  width:100vw;
+  height:100vh;
+  background: url('/assets/wallpaperflare.com_wallpaper(1).jpg') center center;
+
+  /*background:  url('/assets/bg_flower.jpg') no-repeat  center center*/
+  background-size:cover;
+  z-index: -1;
+  opacity:0.3;
+
+}
+
+.bodfather {
+  height: 100vh;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+}
